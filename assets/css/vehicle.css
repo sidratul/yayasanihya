@@ -1,0 +1,116 @@
+#result{
+  display: none;  
+  float: left;           
+}
+
+.bus > div{
+  width: 40px;
+  height: 40px;
+  padding: 7px;
+  background: #eee;
+  margin: 4px 4px;
+  position: relative;
+  border:1px solid #ccc; 
+}
+
+.bus > div > span{
+  
+  font-size: 75%;
+  background-color: #ccc;
+  border : 1px solid rgb(239, 142, 142);
+  text-align: center;
+  top: -8px;
+  left: -8px;
+  width: 15px;
+  position: absolute;
+  z-index: 2;
+  padding: 1px 0;
+  border-radius: 3px;
+  box-sizing: border-box;
+  -webkit-box-sizing :border-box;
+  -moz-box-sizing :border-box;
+  position: absolute;
+}
+
+.busseat{
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  display:block;
+  text-align: center;
+  font-size: 80%;
+  font-weight: 600;
+}
+
+.busseat.available{
+  /* background: url('kursi-bis.png'); */
+  background: ('../images/kursi-bis.png');
+  background-position: 25px 0;
+}
+
+.room {
+  position: absolute;
+  height: 100%;
+  font-size: 80%;
+  font-variant: small-caps;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding:10px 5px;
+  border:2px solid red;
+
+}
+
+.room.toilet {
+  background-color: yellow;
+}
+
+.room.smoking {
+  background-color: whitesmoke;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*tambah*/
+.busseat.driver{
+  background: url('../images/kursi-bis.png');
+  background-position: 25px 0;
+}
+
+/*tambah*/
+.busseat.driver:before{
+  font-size: 20px;
+  content: "\03b8";
+  transform:scale(1,0.6);
+  top: -4px;
+  left: 1px;
+  right: 0;
+  color: #595959;
+  font-weight: 200;
+  position: absolute;
+}
+
+/*tambah*/
+.busseat.driver:after{
+  font-size: 20px;
+  content: "|";
+  top: 0px;
+  left: 1px;
+  right: 0;
+  color: #595959;
+  font-weight: 200;
+  position: absolute;
+}
+
+.table-template td { padding: 3px 10px; border-top: 1px solid #ccc; border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; border-left: 1px solid #ccc;}
+.table-template h5 { margin:5px 0; padding: 0; font-size: 130%; font-weight: 700; }
+
+
